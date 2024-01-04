@@ -1,8 +1,7 @@
 export default function Home() {
   return (
-    <main>
-      <h1>Neat Mail</h1>
-      <p>Email service with a simple and minnimalist approach.</p>
+    <main className="h-full m-0 flex justify-center items-center">
+      <h1 className="text-center">Coming Soon...</h1>
     </main>
   )
 }
