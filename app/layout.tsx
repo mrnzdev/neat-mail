@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
 	title: 'Neat Mail',
@@ -16,7 +15,16 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} bg-black text-white h-dvh`}>{children}</body>
+			<body className={`${GeistSans.className} h-dvh`}>
+			<ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+			</body>
 		</html>
 	);
 }
