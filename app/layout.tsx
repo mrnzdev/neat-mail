@@ -9,7 +9,7 @@ import './globals.css';
 import { ThemeProvider } from 'next-themes';
 
 const inter = Inter({ subsets: ['latin'] });
->>>>>>> a24797c9ed99924185a9f0b592895c8a153c3dd9
+>>>>>>> a24797c9ed99924185a9f0b592895c8a153c3dd9	
 
 export const metadata: Metadata = {
 	title: 'Neat Mail',
