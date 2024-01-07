@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { GeistMono } from 'geist/font/mono';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Neat Mail',
@@ -15,8 +13,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en'>
-			<body className={`${inter.className} bg-black text-white h-dvh`}>{children}</body>
+		<html className={`${GeistMono.className} lang='en'`}>
+			<body className=' bg-black text-white h-dvh'>{children}</body>
 		</html>
 	);
 }
